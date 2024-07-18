@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #87CEEB; /* 연한 하늘색 배경 */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+article {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+article .date {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #87CEEB; /* 연한 하늘색 배경 */
+    color: #fff;
+}
+
+/* 추가된 이미지 슬라이드 스타일 */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
